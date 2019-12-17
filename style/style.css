@@ -1,0 +1,23 @@
+html,
+body,
+main {
+    height: 100%;
+}
+
+.bg {
+    background: url('/img/background/background4.JPG') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.logo {
+    height: auto;
+    max-width: 100%;
+}
+
+.proxima {
+    font-size: 4vw;
+    color: rgb(100, 102, 104);
+}
