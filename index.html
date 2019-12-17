@@ -10,13 +10,16 @@
     <meta name="keywords" content="Agencia de viajes,Trekking,Avistamiento de aves,Camping,Senderismo,EcoTours,Aipe,Huila,Colombia">
     <meta name="author" content="Javier Ricardo Peña Arias">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <!-- icon library -->
+    <link rel="stylesheet" type="text/css" href="/style/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="/style/assets/css/font-awesome.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="./style/bootstrap/css//bootstrap.min.css">
-    <title>El Cuesco EcoTours</title>
+    <link rel="stylesheet" type="text/css" href="/style/bootstrap/css/bootstrap.min.css">
     <!-- Bootstrap JS, Jquery -->
-    <script src="./scripts/jquery/jQuery 3.4.1.js" type="text/javascript"></script>
-    <script src="./style/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="/scripts/jquery/jQuery 3.4.1.js" type="text/javascript"></script>
+    <script src="/style/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <title>El Cuesco EcoTours</title>
 </head>
 
 <body>
@@ -29,10 +32,11 @@
                     </a>
                 </div>
             </div>
+        </div>
     </header>
     <main class="py-2">
         <div class="d-flex justify-content-center">
-            <div class="col-6">
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
                 <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -70,24 +74,22 @@
     <footer>
         <div class="container-fluid bg-secondary">
             <div class="row py-3">
-                <div class="col-4 text-white text-center">Contáctanos:</div>
-                <div class="col-4 text-white text-center">Siguenos en:</div>
-                <div class="col-4 text-white text-center">Encuentranos en:</div>
-            </div>
-            <div class="row">
-                <div class="col-4 text-white">
-                    <div class="col-12 py-1">Dirección: Calle 5# 7-78</div>
-                    <div class="col-12 py-1 ml-2 mr-2">Aipe-Huila-Colombia</div>
-                    <div class="col-12 py-1">Telefonos: (+57) 316 820 2442 - 315 323 8908</div>
-                    <div class="col-12 py-1">Correo Electrónico: Elcuescoecotour@gmail.com</div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-4 text-white" id="contact">
+                    <div class="text-center py-2">Contáctanos:</div>
+                    <div class="col py-1 text-success">Dirección:</div>
+                    <div class="col">5 # 7-78 Aipe-Huila-Colombia</div>
+                    <div class="col py-1 text-success">Telefonos:</div>
+                    <div class="col">(+57) 316 820 2442 - 315 323 8908</div>
+                    <div class="col py-1 text-success">Correo Electrónico:</div>
+                    <div class="col">Elcuescoecotour@gmail.com</div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 d-none d-lg-block">
                                 <a href="/img/poster/elcuescoEcoTours-poster_lq.jpg">
                                     <img class="img-fluid logo" src="./img/poster/elcuescoEcoTours-poster_lq.jpg" alt="ElcuescoEcoTours-poster">
                                 </a>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 d-none d-lg-block">
                                 <a href="/img/poster/tarjetaPresentacion_lq.jpg">
                                     <img class="img-fluid logo" src="./img/poster/tarjetaPresentacion_lq.jpg" alt="ElcuescoEcoTours-tarjeta">
                                 </a>
@@ -95,12 +97,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex justify-content-center">
-                    <a class="btn-social-icon btn-facebook rounded-pill mr-1 ml-1" href="https://www.facebook.com/ElCuescoEcotours/" role="button"><span class="fa fa-facebook"></span></a>
-                    <a class="btn-social-icon btn-instagram rounded-pill mr-1 ml-1" href="https://www.instagram.com/elcuescoecotours26" role="button"><span class="fa fa-instagram"></span></a>
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-4 text-white" id="socialMedia">
+                    <div class="text-center py-2">Siguenos en:</div>
+                    <div class="col d-flex justify-content-center">
+                        <a class="btn-social-icon btn-facebook rounded-pill mr-1 ml-1" href="https://www.facebook.com/ElCuescoEcotours/" role="button"><span class="fa fa-facebook"></span></a>
+                        <a class="btn-social-icon btn-instagram rounded-pill mr-1 ml-1" href="https://www.instagram.com/elcuescoecotours26" role="button"><span class="fa fa-instagram"></span></a>
+                    </div>
                 </div>
-                <div class="col embed-responsive embed-responsive-1by1 my-5 ml-5 mr-5">
-                    <iframe class="embed-responsive-item" src="https://maps.google.com/maps?q=Calle%205%23%207-78%20Aipe-Huila-Colombia+(El%20Cuesco%20EcoTours)&ie=UTF8&t=&z=17&iwloc=B&output=embed" allowfullscreen></iframe>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-white" id="googleMaps">
+                    <div class="text-center py-2">Encuentranos en:</div>
+                    <div class="col text-center d-lg-none"><a class="badge badge-light" href="https://maps.google.com/maps?q=Calle%205%23%207-78%20Aipe-Huila-Colombia+(El%20Cuesco%20EcoTours)">Mapa</a></div>
+                    <div class="col embed-responsive embed-responsive-1by1 map-size-height d-none d-lg-block">
+                        <iframe class="embed-responsive-item" src="https://maps.google.com/maps?q=Calle%205%23%207-78%20Aipe-Huila-Colombia+(El%20Cuesco%20EcoTours)&ie=UTF8&t=&z=17&iwloc=B&output=embed" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
